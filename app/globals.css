@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+    background-image: radial-gradient(
+        at 30% 10%,
+        rgba(13, 148, 136, 0.06) 0px,
+        transparent 45%
+      ),
+      radial-gradient(
+        at 85% 15%,
+        rgba(245, 158, 11, 0.05) 0px,
+        transparent 45%
+      ),
+      radial-gradient(
+        at 10% 80%,
+        rgba(99, 102, 241, 0.04) 0px,
+        transparent 45%
+      );
+  }
+  ::selection {
+    @apply bg-primary/25 text-slate-900;
+  }
+}
+
+@layer components {
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary/30 focus:ring-offset-2;
+  }
+  .card-classy {
+    @apply rounded-2xl border border-slate-200/80 bg-white shadow-soft;
+  }
+}
+
+@keyframes skeleton-pulse {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
