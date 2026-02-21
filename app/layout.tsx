@@ -26,10 +26,10 @@ export default function RootLayout({
               borderRadius: "12px",
               fontWeight: 500,
             },
-            success: { iconTheme: { primary: "#5eead4" } },
+            success: { iconTheme: { primary: "#5eead4", secondary: "#f0fdfa" } },
             error: {
               style: { background: "#9f1239", color: "#ffe4e6" },
-              iconTheme: { primary: "#fda4af" },
+              iconTheme: { primary: "#fda4af", secondary: "#ffe4e6" },
             },
           }}
         />

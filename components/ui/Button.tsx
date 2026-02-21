@@ -36,6 +36,11 @@ export function Button({
   disabled,
   className = "",
   children,
+  onAnimationStart,
+  onAnimationEnd,
+  onDrag,
+  onDragStart,
+  onDragEnd,
   ...props
 }: ButtonProps) {
   return (
